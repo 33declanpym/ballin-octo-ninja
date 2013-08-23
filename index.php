@@ -13,7 +13,7 @@ session_start();
 //$employ = @$_SESSION['employ'];
 //$category = @$_SESSION['category'];
 
-$latest = get_latest_jobs();
+//$latest = get_latest_jobs();
 
 $smarty = new Smarty();
 //$smarty->assign("email", $email);
