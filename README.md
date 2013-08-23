@@ -25,6 +25,7 @@ Upload the PHP application.
 > TO DO
 * Find the .sql and upload it
 * Rewrite the login function using PDO not Mysql_*
+* Link to /usr/local/lib/php/Smarty
 
 IDEAS  
 vallheru
