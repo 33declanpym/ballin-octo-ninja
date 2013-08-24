@@ -2,16 +2,16 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
-DROP SCHEMA IF EXISTS `mydb` ;
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
-USE `mydb` ;
+DROP SCHEMA IF EXISTS `phprpg` ;
+CREATE SCHEMA IF NOT EXISTS `phprpg` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
+USE `phprpg` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`monsters`
+-- Table `phprpg`.`monsters`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`monsters` ;
+DROP TABLE IF EXISTS `phprpg`.`monsters` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`monsters` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`monsters` (
   `id` TINYINT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
   `maxHp` MEDIUMINT ZEROFILL NOT NULL ,
@@ -26,11 +26,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`towns`
+-- Table `phprpg`.`towns`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`towns` ;
+DROP TABLE IF EXISTS `phprpg`.`towns` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`towns` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`towns` (
   `id` TINYINT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
   `latitude` SMALLINT UNSIGNED NOT NULL ,
@@ -41,11 +41,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`class`
+-- Table `phprpg`.`class`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`class` ;
+DROP TABLE IF EXISTS `phprpg`.`class` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`class` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`class` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`id`) )
@@ -53,11 +53,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`spells`
+-- Table `phprpg`.`spells`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`spells` ;
+DROP TABLE IF EXISTS `phprpg`.`spells` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`spells` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`spells` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
   `mp` SMALLINT ZEROFILL NOT NULL ,
@@ -70,11 +70,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`shoutBox`
+-- Table `phprpg`.`shoutBox`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`shoutBox` ;
+DROP TABLE IF EXISTS `phprpg`.`shoutBox` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`shoutBox` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`shoutBox` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `posttime` TIME NOT NULL ,
   `user` SMALLINT NOT NULL ,
@@ -84,11 +84,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`helmet`
+-- Table `phprpg`.`helmet`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`helmet` ;
+DROP TABLE IF EXISTS `phprpg`.`helmet` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`helmet` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`helmet` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -105,11 +105,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`necklace`
+-- Table `phprpg`.`necklace`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`necklace` ;
+DROP TABLE IF EXISTS `phprpg`.`necklace` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`necklace` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`necklace` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -126,11 +126,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`gloves`
+-- Table `phprpg`.`gloves`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`gloves` ;
+DROP TABLE IF EXISTS `phprpg`.`gloves` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`gloves` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`gloves` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -147,11 +147,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`arms`
+-- Table `phprpg`.`arms`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`arms` ;
+DROP TABLE IF EXISTS `phprpg`.`arms` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`arms` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`arms` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -168,11 +168,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`chest`
+-- Table `phprpg`.`chest`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`chest` ;
+DROP TABLE IF EXISTS `phprpg`.`chest` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`chest` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`chest` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -189,11 +189,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`belt`
+-- Table `phprpg`.`belt`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`belt` ;
+DROP TABLE IF EXISTS `phprpg`.`belt` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`belt` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`belt` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -210,11 +210,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`greaves`
+-- Table `phprpg`.`greaves`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`greaves` ;
+DROP TABLE IF EXISTS `phprpg`.`greaves` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`greaves` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`greaves` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -231,11 +231,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`boots`
+-- Table `phprpg`.`boots`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`boots` ;
+DROP TABLE IF EXISTS `phprpg`.`boots` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`boots` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`boots` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -252,11 +252,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`ring`
+-- Table `phprpg`.`ring`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`ring` ;
+DROP TABLE IF EXISTS `phprpg`.`ring` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`ring` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`ring` (
   `id` INT NOT NULL ,
   `slot` TINYINT ZEROFILL NOT NULL ,
   `defense` TINYINT NOT NULL ,
@@ -273,19 +273,19 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`users`
+-- Table `phprpg`.`users`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`users` ;
+DROP TABLE IF EXISTS `phprpg`.`users` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`users` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `userName` VARCHAR(45) NOT NULL ,
   `password` VARCHAR(45) NOT NULL ,
   `fName` VARCHAR(45) NOT NULL ,
   `lName` VARCHAR(45) NOT NULL ,
   `email` VARCHAR(100) NOT NULL ,
-  `regDate` DATETIME NOT NULL DEFAULT 0000-00-00 00:00:00 ,
-  `onlineTime` DATETIME NOT NULL DEFAULT 0000-00-00 00:00:00 ,
+  `regDate` DATETIME NULL ,
+  `onlineTime` DATETIME NULL ,
   `authLevel` TINYINT NOT NULL DEFAULT 0 ,
   `latitude` SMALLINT ZEROFILL NOT NULL ,
   `longitude` SMALLINT ZEROFILL NOT NULL ,
@@ -319,11 +319,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`forum`
+-- Table `phprpg`.`forum`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`forum` ;
+DROP TABLE IF EXISTS `phprpg`.`forum` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`forum` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`forum` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `author` SMALLINT NOT NULL ,
   `postDate` DATETIME NOT NULL ,
@@ -331,17 +331,17 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`forum` (
   `title` VARCHAR(100) NOT NULL ,
   `parent` MEDIUMINT NOT NULL DEFAULT 0 ,
   `replies` MEDIUMINT NOT NULL ,
-  `content` TEXT NOT NULL DEFAULT 'None' ,
+  `content` TEXT NOT NULL ,
   PRIMARY KEY (`id`, `author`) )
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`news`
+-- Table `phprpg`.`news`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`news` ;
+DROP TABLE IF EXISTS `phprpg`.`news` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`news` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`news` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `postDate` DATETIME NOT NULL ,
   `content` TEXT NOT NULL ,
@@ -350,11 +350,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`shoutBox_has_users`
+-- Table `phprpg`.`shoutBox_has_users`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`shoutBox_has_users` ;
+DROP TABLE IF EXISTS `phprpg`.`shoutBox_has_users` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`shoutBox_has_users` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`shoutBox_has_users` (
   `shoutBox_id` INT NOT NULL ,
   `users_id` INT NOT NULL ,
   PRIMARY KEY (`shoutBox_id`, `users_id`) )
@@ -362,11 +362,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`npc`
+-- Table `phprpg`.`npc`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`npc` ;
+DROP TABLE IF EXISTS `phprpg`.`npc` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`npc` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`npc` (
   `id` TINYINT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
   `type` TINYINT ZEROFILL NOT NULL ,
@@ -377,11 +377,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`towns_has_npc`
+-- Table `phprpg`.`towns_has_npc`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`towns_has_npc` ;
+DROP TABLE IF EXISTS `phprpg`.`towns_has_npc` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`towns_has_npc` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`towns_has_npc` (
   `towns_id` TINYINT NOT NULL ,
   `npc_id` TINYINT NOT NULL ,
   PRIMARY KEY (`towns_id`, `npc_id`) )
@@ -389,11 +389,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`levels`
+-- Table `phprpg`.`levels`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`levels` ;
+DROP TABLE IF EXISTS `phprpg`.`levels` ;
 
-CREATE  TABLE IF NOT EXISTS `mydb`.`levels` (
+CREATE  TABLE IF NOT EXISTS `phprpg`.`levels` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `expReq` INT ZEROFILL NOT NULL ,
   PRIMARY KEY (`id`) )
