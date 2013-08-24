@@ -1,7 +1,7 @@
 #################
 ## Eclipse
 #################
-mysql.php
+includes/mysql.php
 *.pydevproject
 .project
 .metadata
