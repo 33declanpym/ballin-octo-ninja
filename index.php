@@ -4,7 +4,7 @@
  * Author: Declan Pym
  * Date: 13/11/2012
  */
-require "Smarty/libs/Smarty.class.php";
+require "/usr/local/lib/php/Smarty/Smarty.class.php";
 //require "includes/defs.php";
 
 session_start();

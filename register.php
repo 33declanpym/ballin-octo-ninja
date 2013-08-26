@@ -4,7 +4,7 @@
  * Declan Pym
  * Php file for the register form
  */
-require "Smarty/libs/Smarty.class.php";
+require "/usr/local/lib/php/Smarty/Smarty.class.php";
 require "includes/defs.php";
 
 session_start();

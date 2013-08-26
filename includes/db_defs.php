@@ -4,14 +4,15 @@
 require "includes/mysql.php";
 /* Show MySQL error. */
 function show_error() {
-die("Error ". mysql_errno() . " : " . mysql_error());
+	die("Error ". mysqli_errno() . " : " . mysqli_error());
 }
+
 /* Open connection and select database. */
 function mysql_open() {
-$connection = @ mysql_connect(HOST, USER, PASSWORD)
-	or die("Could not connect");
-mysql_select_db(DATABASE, $connection)
-	or show_error();
-return $connection;
+	$mysqli = new mysqli('localhost', 'phprpg2', 'phprpg178', 'phprpg');
+	if ($mysqli->connect_error) {
+		die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
+	}
+	return $mysqli;
 }
 ?>
