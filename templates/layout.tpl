@@ -69,7 +69,24 @@
 
 		<div id="inventory">
 		<h3> Inventory </h3>
-		Armor Layout Pic Goes Here
+		<div style="height:300px; width:240px; border:solid 1px;" >
+	<div align="center" style="height:32px; width:32px; border:solid 1px; margin: 10px auto 0px auto;"></div>
+	
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	
+	<div align="center" style="height:32px; width:32px; border:solid 1px; margin: 78px auto 0px auto;"></div>
+	
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	
+	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 27px;"></div>
+	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 27px;"></div>
+	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 27px;"></div>
+
+</div>
 		</div>
 		
 		<div id="spells">
