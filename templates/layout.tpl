@@ -72,19 +72,19 @@
 		<div style="height:300px; width:240px; border:solid 1px;" >
 	<div align="center" style="height:32px; width:32px; border:solid 1px; margin: 10px auto 0px auto;"></div>
 	
-	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
-	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
-	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 18px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 18px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 18px;"></div>
 	
-	<div align="center" style="height:32px; width:32px; border:solid 1px; margin: 78px auto 0px auto;"></div>
+	<div align="center" style="height:32px; width:32px; border:solid 1px; margin: 68px auto 0px auto;"></div>
 	
-	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
-	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
-	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 23px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 18px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 18px;"></div>
+	<div align="center" style="float:left; height:32px; width:32px; border:solid 1px; margin: 18px;"></div>
 	
-	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 27px;"></div>
-	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 27px;"></div>
-	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 27px;"></div>
+	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 22px;"></div>
+	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 22px;"></div>
+	<div align="center" style="float:left; height:24px; width:24px; border:solid 1px; margin: 0px 22px;"></div>
 
 </div>
 		</div>
